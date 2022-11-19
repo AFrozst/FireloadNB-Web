@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { SectionWrapper, SectionTerms } from "./components";
+import assets from "./assets";
+import styles from "./styles/Global";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      {/* <SectionWrapper
+        title="Elabora estudios de carga de fuego con la herramienta de Fireload NB"
+        description="Cree, edite y genere reportes de tus estudios de carga de fuego, siguiendo las directrices de la NB 58005 y NB 58002"
+        //showBtn
+        mockupImg={assets.homeHero}
+        banner="banner"
+      /> */}
+
+      <SectionTerms />
+
+      <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
+        <p className={`${styles.pText} ${styles.whiteText}`}>
+          Copyright © Todos los derechos reservados son de{" "}
+          <span className="bold">FrozstDev</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
