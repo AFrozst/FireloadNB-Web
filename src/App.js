@@ -5,13 +5,13 @@ import styles from "./styles/Global";
 const App = () => {
   return (
     <>
-      {/* <SectionWrapper
+      <SectionWrapper
         title="Elabora estudios de carga de fuego con la herramienta de Fireload NB"
         description="Cree, edite y genere reportes de tus estudios de carga de fuego, siguiendo las directrices de la NB 58005 y NB 58002"
         //showBtn
-        mockupImg={assets.homeHero}
+        mockupImg={assets.mobiles02}
         banner="banner"
-      /> */}
+      />
 
       <SectionTerms />
 
